@@ -3,10 +3,10 @@
     <router-view @modalVisible="showModal" />
     <footer>
       <div class="editions">
-        <a href="http://2018.commitporto.com" target="_blank">2018</a>.
-        <a href="http://2017.commitporto.com" target="_blank">2017</a>.
-        <a href="http://2016.commitporto.com" target="_blank">2016</a>.
-        <a href="http://2015.commitporto.com" target="_blank">2015</a>
+        <a href="https://2018.commitporto.com" target="_blank">2018</a>.
+        <a href="https://2017.commitporto.com" target="_blank">2017</a>.
+        <a href="https://2016.commitporto.com" target="_blank">2016</a>.
+        <a href="https://2015.commitporto.com" target="_blank">2015</a>
       </div>
       <div class="socials">
         <img src="@/assets/facebook.svg" />
