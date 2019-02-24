@@ -68,10 +68,13 @@ export default {
   transform: translateY(-50%);
   max-width: 50%;
   min-height: 100px;
+  max-height: 80%;
   background: var(--white);
   padding: 50px;
   font-weight: 100;
   border-radius: 5px;
+  overflow: auto;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 
   @media (--tablet) {
     max-width: 80%;
@@ -91,6 +94,10 @@ export default {
     @apply --small-font;
     display: block;
     margin-top: 10px;
+  }
+
+  & a {
+    color: var(--mainColor);
   }
 }
 
