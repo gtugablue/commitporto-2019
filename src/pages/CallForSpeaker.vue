@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Call for Speaker</h1>
+    <h1>Call for Speakers</h1>
     <strong>Presenters – who should speak at Commit Porto?</strong>
     <small>Commit Porto is a tech conference that brings together professionals who tackle
      challenges in software development with the latest technologies. It is an excellent opportunity
