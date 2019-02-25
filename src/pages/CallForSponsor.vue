@@ -15,11 +15,16 @@
       If your company wants to be part of Commit Porto ’19, you can reach out to us via the form
       bellow. Find all we have to offer in our prospectus.
     </small>
-    <div class="form">
-      <input v-model="name" placeholder="tell us your name">
-      <input v-model="email" placeholder="email address where we can reach you">
-      <Button text="Send" isSecondary={true} :onClick="send" />
-    </div>
+    <form class="form" @submit.prevent="submitForm">
+      <input v-model="name" placeholder="tell us your name" required>
+      <input
+        v-model="email"
+        placeholder="email address where we can reach you"
+        type="email"
+        required
+      >
+      <Button text="Send" isSecondary={true} type="submit" />
+    </form>
     <small>
       We are also happy to answer any questions via our email
       <a href="mailto:partnerships@commitporto.com">partnerships@commitporto.com</a>.<br/>
@@ -38,14 +43,14 @@ export default {
     email: '',
   }),
   methods: {
-    send() {
+    submitForm() {
       const url = 'https://hooks.slack.com/services/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';
-      const text = `Chamo-me ${this.name} e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: ${this.email} (cc <!here>)`;
+      const data = JSON.stringify({ text: `Chamo-me ${this.name} e quero patrocinar a commitporto:commitporto:! Enviem-me o prospectus para: ${this.email} (cc <!here>)` });
 
       this.$http.post(
         url,
-        { text },
-        { 'Content-Type': 'application/x-www-form-urlencoded' },
+        data,
+        { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } },
       );
     },
   },
