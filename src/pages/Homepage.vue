@@ -7,11 +7,15 @@
           :class="{hide: play}"
         />
         <video
-          :class="{hide: !play}"
           src="@/assets/commit_shorter.mp4"
+          poster="@/assets/bckg.jpg"
+          preload="none"
+          muted="true"
+          loop=""
           autoplay
-          loop
-        />
+        >
+          Sorry, your browser doesn't support embedded videos.
+        </video>
       </div>
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
