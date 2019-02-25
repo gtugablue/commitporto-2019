@@ -91,7 +91,7 @@ export default {
   filter:
     grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 
   &.hide {
     opacity: 0;
@@ -101,12 +101,6 @@ export default {
 }
 
 video {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-
-  &.hide {
-    opacity: 0;
-  }
 }
 
 .logo-section {
