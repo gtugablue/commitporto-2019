@@ -9,9 +9,9 @@
         <a href="http://2015.commitporto.com" target="_blank">2015</a>
       </div>
       <div class="socials">
-        <img src="@/assets/facebook.svg" />
-        <img src="@/assets/twitter.svg" />
-        <img src="@/assets/youtube.svg" />
+        <a href="https://www.facebook.com/commitporto" target="_blank"><img src="@/assets/facebook.svg" /></a>
+        <a href="https://twitter.com/commitporto" target="_blank"><img src="@/assets/twitter.svg" /></a>
+        <a href="https://www.youtube.com/channel/UCuYn5xuAmChRDcSdQrbp-Fw/videos" target="_blank"><img src="@/assets/youtube.svg" /></a>
       </div>
     </footer>
     <Modal v-show="isModalVisible" @close="closeModal">
@@ -89,7 +89,7 @@ footer {
     margin-bottom: 10px;
   }
 
-  & img:not(:last-child) {
+  & a:not(:last-child) {
     margin-right: 20px;
   }
 }
