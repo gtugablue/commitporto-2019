@@ -46,7 +46,7 @@
     <h3 class="submit-proposal">
       <strong>Please submit your proposals
          <a href="https://alumniei.typeform.com/to/dYYSD1" target="_blank">HERE</a>
-         until March 20th, 2019.
+         until March 31st, 2019.
       </strong>
     </h3>
     <small>Please note:
