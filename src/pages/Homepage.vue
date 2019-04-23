@@ -6,7 +6,8 @@
           class="bckg-img"
           :class="{hide: play}"
         />
-        <video
+        <!-- <video
+          :class="{hide: !play}"
           src="@/assets/commit_shorter.mp4"
           poster="@/assets/bckg.jpg"
           preload="none"
@@ -15,28 +16,24 @@
           autoplay
         >
           Sorry, your browser doesn't support embedded videos.
-        </video>
+        </video> -->
       </div>
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
         <div class="time">JUNE 22, 2019</div>
-        <div @click="() => play = !play" :class="{ isPlaying: play, paused: !play }">
+        <!--<div @click="() => play = !play" :class="{ isPlaying: play, paused: !play }">
           <img class="play" src="@/assets/play.svg" />
           <img class="pause" src="@/assets/pause.svg" />
-        </div>
-      </div>
-      <div class="cta-section">
-        <Button text="Call for sponsors" :onClick="openCallForSponsors" />
-        <Button text="Call for speakers" :onClick="openCallForSpeakers" />
+        </div> -->
       </div>
     </div>
+    <AboutUs />
   </div>
 </template>
 
 <script>
 import Button from '@/components/Button';
-import CallForSponsor from '@/pages/CallForSponsor';
-import CallForSpeaker from '@/pages/CallForSpeaker';
+import AboutUs from '@/pages/AboutUs';
 
 export default {
   name: 'Homepage',
@@ -45,16 +42,9 @@ export default {
   }),
   components: {
     Button,
-    CallForSponsor,
-    CallForSpeaker,
+    AboutUs,
   },
   methods: {
-    openCallForSponsors() {
-      this.$emit('modalVisible', CallForSponsor);
-    },
-    openCallForSpeakers() {
-      this.$emit('modalVisible', CallForSpeaker);
-    },
   },
 };
 </script>
@@ -69,26 +59,32 @@ export default {
 
 .container {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   color: var(--white);
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
 
   @media (--mobile) {
     height: 85vh;
   }
-
 }
 
-.background {
+/* video {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 1s ease;
+
+  &.hide {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+} */
 
 .bckg-img {
   background: var(--textColor) url('../assets/bckg.jpg') no-repeat center center / cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   filter:
     grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   opacity: 1;
@@ -99,9 +95,6 @@ export default {
     width: 0;
     height: 0;
   }
-}
-
-video {
 }
 
 .logo-section {
@@ -125,8 +118,8 @@ video {
   }
 
   & .time {
-    @apply --medium-font;
     font-family: var(--secondary-font);
+    font-size: var(--medium-font);
     margin-top: 5px;
     margin-bottom: 10px;
   }
@@ -168,18 +161,6 @@ video {
 .paused {
   & .pause {
     opacity: 0;
-  }
-}
-
-.cta-section {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  transform: translateY(50%);
-  text-align: center;
-
-  & > button:not(:last-child) {
-    margin-right: 5%;
   }
 }
 </style>

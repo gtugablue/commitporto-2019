@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <nav class="crumbs">
+      <a href="#">About</a>
+      <a href="#">Speakers</a>
+      <a href="#">Sponsors</a>
+    </nav>
     <router-view @modalVisible="showModal" />
     <footer>
       <div class="editions">
@@ -56,8 +61,7 @@ html {
 body {
   margin: 0;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
   position: relative;
 }
 
@@ -65,20 +69,55 @@ body {
   font-family: var(--main-font);
   color: var(--textColor);
   margin: 0;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+nav {
+  position: fixed;
+  top: var(--small-space);
+  right: 0;
+  z-index: 1;
+
+  & a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: lighter;
+    font-size: var(--text-font);
+    margin-right: var(--space);
+
+    &:hover {
+      position: relative;
+
+      &::before {
+        content: '⌜';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
+
+      &::after {
+        content: '⌟';
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+      }
+    }
+  }
+}
+
+
 footer {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  margin: var(--small-space);
 
   @media (--bellow-desktop) {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: var(--small-space);
     text-align: center;
     flex-direction: column-reverse;
   }
@@ -86,7 +125,7 @@ footer {
 
 .socials {
   @media (--bellow-desktop) {
-    margin-bottom: 10px;
+    margin-bottom: var(--small-space);
   }
 
   & a:not(:last-child) {
@@ -95,7 +134,7 @@ footer {
 }
 
 .editions {
-  font-size: 10px;
+  @apply --small-font;
   margin-top: 5px;
 
   & a {
