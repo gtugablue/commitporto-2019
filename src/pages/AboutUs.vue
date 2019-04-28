@@ -44,6 +44,10 @@ export default {
   & img {
     margin: var(--space);
   }
+
+  @media (--bellow-desktop) {
+    display: none;
+  }
 }
 .border {
   &::before {
