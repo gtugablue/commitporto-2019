@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <nav class="crumbs">
-      <a href="#">About</a>
-      <a href="#">Speakers</a>
-      <a href="#">Sponsors</a>
+      <router-link to="#about">About</router-link>
+      <router-link to="#speakers">Speakers</router-link>
+      <router-link to="#sponsors">Sponsors</router-link>
     </nav>
     <router-view @modalVisible="showModal" />
     <footer>
@@ -148,6 +148,52 @@ footer {
     &:not(:last-child){
       padding-right: 5px;
     }
+  }
+}
+
+.border {
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: var(--mainColor);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: var(--mainColor);
+  }
+}
+
+.upper-border {
+  &::before {
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 200px;
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 15px;
+  }
+}
+
+.bottom-border {
+  &::before {
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 100px;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 15px;
   }
 }
 </style>

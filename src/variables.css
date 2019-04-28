@@ -18,6 +18,7 @@
   };
   --small-space: 1rem;
   --space: 2rem;
-  --new-section-margin: 140px auto;
+  --new-section-margin: 140px auto 0;
   --font-weight-light: 100;
+  --red-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
 }

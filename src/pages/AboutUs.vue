@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about">
     <div class="about-img">
       <div class="border upper-border"/>
       <img src="@/assets/aboutus.png"/>
@@ -31,9 +31,9 @@ export default {
 <style scoped>
 @import '../variables';
 
-.about {
+#about {
   margin: var(--new-section-margin);
-  width: 60%;
+  width: 70%;
   display: flex;
 }
 
@@ -49,55 +49,9 @@ export default {
     display: none;
   }
 }
-.border {
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: var(--mainColor);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    background-color: var(--mainColor);
-  }
-}
-
-.upper-border {
-  &::before {
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 200px;
-  }
-
-  &::after {
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 15px;
-  }
-}
-
-.bottom-border {
-  &::before {
-    bottom: 0;
-    right: 0;
-    width: 15px;
-    height: 100px;
-  }
-
-  &::after {
-    bottom: 0;
-    right: 0;
-    width: 150px;
-    height: 15px;
-  }
-}
-
 .about-text {
   font-weight: var(--font-weight-light);
-  line-height: 2rem;
   font-size: var(--medium-font);
+  line-height: 2rem;
 }
 </style>

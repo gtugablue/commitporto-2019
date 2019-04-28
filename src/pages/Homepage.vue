@@ -6,34 +6,22 @@
           class="bckg-img"
           :class="{hide: play}"
         />
-        <!-- <video
-          :class="{hide: !play}"
-          src="@/assets/commit_shorter.mp4"
-          poster="@/assets/bckg.jpg"
-          preload="none"
-          muted="true"
-          loop=""
-          autoplay
-        >
-          Sorry, your browser doesn't support embedded videos.
-        </video> -->
       </div>
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
         <div class="time">JUNE 22, 2019</div>
-        <!--<div @click="() => play = !play" :class="{ isPlaying: play, paused: !play }">
-          <img class="play" src="@/assets/play.svg" />
-          <img class="pause" src="@/assets/pause.svg" />
-        </div> -->
       </div>
     </div>
     <AboutUs />
+    <Speakers />
+    <Sponsors />
   </div>
 </template>
 
 <script>
 import Button from '@/components/Button';
 import AboutUs from '@/pages/AboutUs';
+import Speakers from '@/pages/Speakers';
 
 export default {
   name: 'Homepage',
@@ -43,6 +31,7 @@ export default {
   components: {
     Button,
     AboutUs,
+    Speakers,
   },
   methods: {
   },
@@ -63,31 +52,17 @@ export default {
   color: var(--white);
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  
+
   @media (--mobile) {
     height: 85vh;
   }
 }
 
-/* video {
-  width: 100%;
-  height: 100vh;
-  opacity: 1;
-  transition: opacity 1s ease;
-
-  &.hide {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-} */
-
 .bckg-img {
   background: var(--textColor) url('../assets/bckg.jpg') no-repeat center center / cover;
   width: 100%;
   height: 100vh;
-  filter:
-    grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+  filter: var(--red-filter);
   opacity: 1;
   transition: opacity 1s ease;
 
@@ -126,42 +101,4 @@ export default {
   }
 }
 
-.play,
-.pause {
-  display: none;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  cursor: pointer;
-  position: absolute;
-  width: 100%;
-
-  @media (--desktop) {
-    display: block;
-  }
-
-  & img {
-    width: 30px;
-    cursor: pointer;
-  }
-}
-
-.isPlaying,
-.paused {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-}
-
-.isPlaying {
-  & .play {
-    opacity: 0;
-  }
-}
-
-.paused {
-  & .pause {
-    opacity: 0;
-  }
-}
 </style>
