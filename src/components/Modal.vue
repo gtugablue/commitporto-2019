@@ -71,7 +71,7 @@ export default {
   max-height: 80%;
   background: var(--white);
   padding: 50px;
-  font-weight: 100;
+  font-weight: var(--font-weight-light);
   border-radius: 5px;
   overflow: auto;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);

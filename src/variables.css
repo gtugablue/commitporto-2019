@@ -18,5 +18,6 @@
   };
   --small-space: 1rem;
   --space: 2rem;
-  --new-section-margin: 140px 60px 0;
+  --new-section-margin: 140px auto;
+  --font-weight-light: 100;
 }

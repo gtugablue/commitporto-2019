@@ -5,75 +5,95 @@
       <img src="@/assets/aboutus.png"/>
       <div class="border bottom-border"/>
     </div>
-    <div>Commit Porto is a tech conference that brings together professionals who tackle challenges in software development with the latest technologies. It is an excellent opportunity for knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for technology-based companies!</div>
+    <div>
+      <Title title="About us" subtitle="Welcome" />
+      <div class="about-text">
+        Commit Porto is a tech conference that brings together professionals who tackle challenges
+         in software development with the latest technologies. It is an excellent opportunity for
+         knowledge sharing and inherently promoting Porto as a vibrant and dynamic city for
+         technology-based companies!
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Title from '@/components/Title';
+
 export default {
   name: 'AboutUs',
+  components: {
+    Title,
+  },
 };
 </script>
 
 <style scoped>
 @import '../variables';
-  .about {
-    margin: var(--new-section-margin) auto;
-    width: 60%;
-    display: flex;
+
+.about {
+  margin: var(--new-section-margin);
+  width: 60%;
+  display: flex;
+}
+
+.about-img {
+  position: relative;
+  margin-right: var(--space);
+
+  & img {
+    margin: var(--space);
+  }
+}
+.border {
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: var(--mainColor);
   }
 
-  .about-img {
-    position: relative;
-
-    & img {
-      margin: var(--space);
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: var(--mainColor);
   }
-  .border {
-    &::before {
-      content: '';
-      position: absolute;
-      background-color: var(--mainColor);
-    }
+}
 
-    &::after {
-      content: '';
-      position: absolute;
-      background-color: var(--mainColor);
-    }
+.upper-border {
+  &::before {
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 200px;
   }
 
-  .upper-border {
-    &::before {
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 250px;
-    }
+  &::after {
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 15px;
+  }
+}
 
-    &::after {
-      top: 0;
-      left: 0;
-      width: 150px;
-      height: 20px;
-    }
+.bottom-border {
+  &::before {
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 100px;
   }
 
-  .bottom-border {
-    &::before {
-      bottom: 0;
-      right: 0;
-      width: 20px;
-      height: 100px;
-    }
-
-    &::after {
-      bottom: 0;
-      right: 0;
-      width: 150px;
-      height: 20px;
-    }
+  &::after {
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 15px;
   }
+}
 
+.about-text {
+  font-weight: var(--font-weight-light);
+  line-height: 2rem;
+  font-size: var(--medium-font);
+}
 </style>
