@@ -49,12 +49,14 @@ export default {
   margin-bottom: var(--space);
   cursor: pointer;
 
-  &:nth-child(5) {
-    margin-left: 100px;
-  }
+  @media (--desktop) {
+    &:nth-child(5) {
+      margin-left: 100px;
+    }
 
-  &:nth-child(7) {
-    margin-right: 100px;
+    &:nth-child(7) {
+      margin-right: 100px;
+    }
   }
 }
 
