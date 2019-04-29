@@ -10,8 +10,19 @@
       </div>
     </div>
     <AboutUs />
+    <div class="gallery">
+      <img src="@/assets/gallery/gallery_1.jpg" />
+      <img src="@/assets/gallery/gallery_2.jpg" />
+      <img src="@/assets/gallery/gallery_3.jpg" />
+      <img src="@/assets/gallery/gallery_6.jpg" />
+      <img src="@/assets/gallery/gallery_9.jpg" />
+      <img src="@/assets/gallery/gallery_7.jpg" />
+      <img src="@/assets/gallery/gallery_11.jpg" />
+      <img src="@/assets/gallery/gallery_8.jpg" />
+      <img src="@/assets/gallery/gallery_4.jpg" />
+      <img src="@/assets/gallery/gallery_10.jpg" />
+    </div>
     <Speakers />
-    <Sponsors />
   </div>
 </template>
 
@@ -19,6 +30,7 @@
 import Button from '@/components/Button';
 import AboutUs from '@/pages/AboutUs';
 import Speakers from '@/pages/Speakers';
+import Sponsors from '@/pages/Sponsors';
 
 export default {
   name: 'Homepage',
@@ -32,11 +44,6 @@ export default {
 
 <style scoped>
 @import '../variables';
-
-.homepage {
-  display: flex;
-  flex-direction: column;
-}
 
 .container {
   position: relative;
@@ -93,4 +100,14 @@ export default {
   }
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: var(--new-section-margin);
+  filter: grayscale(0.4);
+
+  & img {
+    max-width: 100%;
+  }
+}
 </style>

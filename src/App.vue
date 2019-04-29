@@ -50,7 +50,6 @@ export default {
     },
     handleScroll() {
       this.scrolled = window.scrollY > 0;
-      console.log('window.scrollY', window.scrollY)
     },
   },
   created() {
