@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="crumbs">
+    <nav :class="{scrolled: scrolled}">
       <router-link to="#about">About</router-link>
       <router-link to="#speakers">Speakers</router-link>
       <router-link to="#sponsors">Sponsors</router-link>
@@ -38,6 +38,7 @@ export default {
   data: () => ({
     isModalVisible: false,
     modalContent: null,
+    scrolled: false,
   }),
   methods: {
     showModal(modalContent) {
@@ -47,6 +48,16 @@ export default {
     closeModal() {
       this.isModalVisible = false;
     },
+    handleScroll() {
+      this.scrolled = window.scrollY > 0;
+      console.log('window.scrollY', window.scrollY)
+    },
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
 };
 </script>
@@ -80,6 +91,7 @@ nav {
   top: var(--small-space);
   right: 0;
   z-index: 1;
+  padding: var(--x-small-space) var(--small-space);
 
   & a {
     text-transform: uppercase;
@@ -87,7 +99,10 @@ nav {
     color: var(--white);
     font-weight: lighter;
     font-size: var(--text-font);
-    margin-right: var(--space);
+
+    &:not(:last-child) {
+      margin-right: var(--space);
+    }
 
     &:hover {
       position: relative;
@@ -107,8 +122,16 @@ nav {
       }
     }
   }
-}
 
+  &.scrolled {
+    background: var(--white);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+
+    & a {
+      color: var(--textColor);
+    }
+  }
+}
 
 footer {
   display: flex;

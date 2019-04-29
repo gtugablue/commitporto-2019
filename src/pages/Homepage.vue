@@ -2,10 +2,7 @@
   <div class="homepage">
     <div class="container">
       <div class="background">
-        <div
-          class="bckg-img"
-          :class="{hide: play}"
-        />
+        <div class="bckg-img" />
       </div>
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
@@ -25,15 +22,10 @@ import Speakers from '@/pages/Speakers';
 
 export default {
   name: 'Homepage',
-  data: () => ({
-    play: false,
-  }),
   components: {
     Button,
     AboutUs,
     Speakers,
-  },
-  methods: {
   },
 };
 </script>

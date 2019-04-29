@@ -16,6 +16,7 @@
     font-size: 0.68rem; /* 11px */
     line-height: 1.4;
   };
+  --x-small-space: 0.5rem;
   --small-space: 1rem;
   --space: 2rem;
   --new-section-margin: 140px auto 0;
