@@ -23,6 +23,7 @@
       <img src="@/assets/gallery/gallery_10.jpg" />
     </div>
     <Speakers />
+    <Sponsors />
   </div>
 </template>
 
@@ -38,6 +39,7 @@ export default {
     Button,
     AboutUs,
     Speakers,
+    Sponsors,
   },
 };
 </script>

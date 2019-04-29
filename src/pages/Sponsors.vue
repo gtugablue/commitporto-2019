@@ -1,5 +1,6 @@
 <template>
   <div id="sponsors">
+    <Title title="Sponsors" subtitle="Thanks to our" />
   </div>
 </template>
 
@@ -17,5 +18,11 @@ export default {
 <style scoped>
 @import '../variables';
 
+#sponsors {
+  margin: var(--new-section-margin);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
 
 </style>
