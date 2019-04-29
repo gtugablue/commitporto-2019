@@ -48,6 +48,7 @@ export default {
   text-align: center;
   margin-bottom: var(--space);
   cursor: pointer;
+  grid-column: span 2;
 
   @media (--desktop) {
     &:nth-child(5) {
@@ -57,6 +58,10 @@ export default {
     &:nth-child(7) {
       margin-right: 100px;
     }
+  }
+
+  &:nth-child(5) {
+    grid-column: 2 / 4;
   }
 }
 

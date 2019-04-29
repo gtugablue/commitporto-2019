@@ -93,10 +93,8 @@ export default {
 }
 
 .speakers-list {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .bottom-border {
