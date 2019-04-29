@@ -48,20 +48,13 @@ export default {
   text-align: center;
   margin-bottom: var(--space);
   cursor: pointer;
-  grid-column: span 2;
 
   @media (--desktop) {
-    &:nth-child(5) {
-      margin-left: 100px;
-    }
+    grid-column: span 2;
 
-    &:nth-child(7) {
-      margin-right: 100px;
+    &:nth-child(7n + 5) {
+      grid-column: 2 / 4;
     }
-  }
-
-  &:nth-child(5) {
-    grid-column: 2 / 4;
   }
 }
 

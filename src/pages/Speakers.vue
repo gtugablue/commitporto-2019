@@ -95,6 +95,10 @@ export default {
 .speakers-list {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+
+  @media (--bellow-desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .bottom-border {
