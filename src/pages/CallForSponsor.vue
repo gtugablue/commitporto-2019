@@ -81,7 +81,7 @@ export default {
     flex-grow: 1;
     flex-basis: 0;
     margin-right: 20px;
-    border: 1px solid var(--textColor);
+    border: 1px solid var(--text-color);
     padding: 5px;
   }
 

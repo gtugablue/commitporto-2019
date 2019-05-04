@@ -97,7 +97,7 @@ export default {
   }
 
   & a {
-    color: var(--mainColor);
+    color: var(--main-color);
   }
 }
 

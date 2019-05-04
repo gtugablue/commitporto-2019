@@ -19,7 +19,7 @@ export default {
   button {
     font-family: var(--main-font);
     background-color: var(--white);
-    color: var(--mainColor);
+    color: var(--main-color);
     text-transform: uppercase;
     border-radius: 5px;
     border-width: 0;
@@ -28,7 +28,7 @@ export default {
     cursor: pointer;
 
     &:active {
-      background-color: var(--mainColor);
+      background-color: var(--main-color);
       color: var(--white);
     }
 
@@ -40,18 +40,18 @@ export default {
 
     &:disabled {
       pointer-events: none;
-      background: var(--lightGrey);
+      background: var(--light-grey);
       color: var(--white);
     }
 
     &.secondary {
-      background-color: var(--mainColor);
+      background-color: var(--main-color);
       color: var(--white);
       box-shadow: none;
 
       &:active {
         background-color: var(--white);
-        color: var(--mainColor);
+        color: var(--main-color);
       }
     }
   }

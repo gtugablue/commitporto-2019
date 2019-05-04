@@ -20,14 +20,14 @@ export default {
 }
 
 .subtitle {
-  color: var(--textColor);
+  color: var(--text-color);
   text-transform: uppercase;
   font-size: 1.5rem; /* 24px */
   font-weight: var(--font-weight-light);
 }
 
 .title {
-  color: var(--mainColor);
+  color: var(--main-color);
   text-transform: capitalize;
   font-size: 3.12rem; /* 50px */
   font-weight: var(--font-weight-light);

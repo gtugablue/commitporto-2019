@@ -4,16 +4,16 @@
     <div class="name">{{name}}</div>
     <div class="social">
       <a v-if="twitter" :href="twitterLink" target="_blank">
-        <img src="@/assets/twitter.svg" />
+        <img src="@/assets/social/twitter.svg" />
       </a>
       <a v-if="github" :href="githubLink" target="_blank">
-        <img src="@/assets/github.svg" />
+        <img src="@/assets/social/github.svg" />
       </a>
       <a v-if="linkedin" :href="linkedinLink" target="_blank">
-        <img src="@/assets/linkedin.svg" />
+        <img src="@/assets/social/linkedin.svg" />
       </a>
       <a v-if="website" :href="website" target="_blank">
-        <img src="@/assets/link.svg" />
+        <img src="@/assets/social/link.svg" />
       </a>
     </div>
   </div>
@@ -95,7 +95,7 @@ export default {
 
 .name {
   text-transform: uppercase;
-  color: var(--textColor);
+  color: var(--text-color);
   font-size: var(--medium-font);
 }
 

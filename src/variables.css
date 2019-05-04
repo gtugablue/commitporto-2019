@@ -4,10 +4,10 @@
 @custom-media --desktop (min-width: 769px);
 
 :root {
-  --mainColor: #C74540;
-  --textColor: #4c4c4c;
+  --main-color: #C74540;
+  --text-color: #4c4c4c;
   --white: #fff;
-  --lightGrey: #e4e4e4;
+  --light-grey: #e4e4e4;
   --main-font: 'Rubik', sans-serif;
   --secondary-font: 'Josefin Slab', cursive;
   --medium-font: 1.25rem; /* 20px */

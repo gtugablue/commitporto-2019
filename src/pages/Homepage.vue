@@ -60,7 +60,7 @@ export default {
 }
 
 .bckg-img {
-  background: var(--textColor) url('../assets/bckg.jpg') no-repeat center center / cover;
+  background: var(--text-color) url('../assets/bckg.jpg') no-repeat center center / cover;
   width: 100%;
   height: 100vh;
   filter: var(--red-filter);
