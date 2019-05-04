@@ -1,5 +1,5 @@
 <template>
-  <div class="speaker" :class="{placeholder: name}">
+  <div class="speaker" :class="{placeholder: !name}">
     <img class="photo" :src="fullfileName"/>
     <div class="name">{{name}}</div>
     <div class="social">
@@ -57,11 +57,13 @@ export default {
   }
 
   &.placeholder {
-    cursor: pointer;
-
     @media (--bellow-desktop) {
       display: none;
     }
+  }
+
+  &:not(.placeholder) {
+    cursor: pointer;
 
     &:hover {
       & .photo {
