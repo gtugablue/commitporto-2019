@@ -91,10 +91,11 @@ export default {
 .sponsor {
   display: flex;
   align-items: center;
-  margin-bottom: var(--large-space);
+  flex-wrap: wrap;
 
   & img {
     margin-right: var(--large-space);
+    margin-bottom: var(--large-space);
     cursor: pointer;
   }
 }
@@ -103,6 +104,10 @@ export default {
   & img {
     max-height: 200px;
     max-width: 250px;
+
+    @media (--bellow-desktop) {
+      max-width: 150px;
+    }
   }
 }
 
@@ -110,6 +115,10 @@ export default {
   & img {
     max-height: 130px;
     max-width: 200px;
+
+    @media (--bellow-desktop) {
+      max-width: 100px;
+    }
   }
 }
 
@@ -117,6 +126,10 @@ export default {
   & img {
     max-height: 70px;
     max-width: 100px;
+
+    @media (--bellow-desktop) {
+      max-width: 70px;
+    }
   }
 }
 
