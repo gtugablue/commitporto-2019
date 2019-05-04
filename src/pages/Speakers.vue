@@ -41,29 +41,29 @@ export default {
         role: 'Co-founder & CEO @ textile01',
         twitter: 'andrewxhill',
         github: 'andrewxhill',
-        website: 'https://andrewxhill.com/', 
+        website: 'https://andrewxhill.com/',
         bio: 'Andrew Hill has been a biologist, a mapper, a technologist, and an entrepreneur. Now, he is helping to build Textile, a company that explores technology for decentralized consumer applications. He spends his days trying to further their mission to radically change the way people use their data to interact with technology.',
         title: 'Unleashing the power of decentralization: How to build unstoppable apps using IPFS',
         abstract: 'From before you even wake up in the morning, your day is being encoded into digital data. What started as simply our IP address, nic, or maybe email address has now grown to include our dating profiles, medical histories, mundane conversations, personality traits not even we are aware of, and much more. While our trails of digital data have become more detailed, the technologies that leverage that data have become more opaque and less in our control.<br>Decentralization, content addressable data, and technologies like IPFS give us a new framework to think about how data should be stored, controlled, and used in technology. In this talk, we will present how IPFS can be used to build technologies that give users long-term control of their personal data while still enabling amazing and useful technology to be built around it.<br>You should expect to hear: how protocols in IPFS can be used in consumer apps; what new values and interactions are possible when using decentralized systems in apps; examples of some simple ways to add IPFS to your projects; a long term vision for how data could in the future of technology.',
       },
       {
         file: 'user.png',
-        //name: 'Filipa Moura',
+        // name: 'Filipa Moura',
       },
       {
         file: 'user.png',
-        //name: 'Ricardo Mendes',
+        // name: 'Ricardo Mendes',
         bio: 'Ricardo is a long time open sourcerer and member of the Ember.js learning and framework core teams. Ricardo currently works at Simplabs, and hosts the Porto Codes meetup and the Conversas em Código podcast.',
-        //linkedin: 'rmendes',
+        // linkedin: 'rmendes',
         title: 'Thriving through the hype cycle: an Ember.js story',
         abstract: 'The front-end development community has been through a fair share of hype cycles in the last ten years. In this time, we have seen libraries and frameworks come and go, sometimes even disappearing completely like batman.js.<br>In this talk we will cover how the Ember.js project has managed not only to keep up with the hype cycles, but to continually push the framework and the web forward and bring its users along.<br>We will close off the presentation by talking how this culminates in the concept of editions, the first of which is Ember Octane.',
       },
       {
         file: 'user.png',
-        //name: 'Rodrigo Morales',
+        // name: 'Rodrigo Morales',
         bio: 'My name is Rodrigo, I&apos;m originally from Mexico city. I&apos;ve been living in Madrid, Spain for the past 8 years; where I studied Software Engineering.<br>I work at Vizzuality as a Front Engineer, on my day to day I build cool visualisations using React and Redux. I like to get involved and contribute to open source projects, among the things I enjoy the most are building tools and designing libraries public APIs.<br>On a more personal note, I like beer, tacos and going out dancing.',
-        //github: 'sorodrigo',
-        //twitter: 'sorodrigo',
+        // github: 'sorodrigo',
+        // twitter: 'sorodrigo',
       },
       {
         file: 'user.png',
@@ -115,7 +115,7 @@ export default {
 .bottom-border {
   &::before,
   &::after {
-    bottom: var(--space);
+    bottom: 0;
   }
 }
 </style>

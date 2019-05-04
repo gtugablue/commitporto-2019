@@ -60,10 +60,32 @@ export default {
 
 .photo {
   width: 200px;
-  transition : filter 1s ease;
+  opacity: 0.8;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.35s, transform 0.35s;
 
   &:hover {
-    filter: var(--red-filter);
+    opacity: 1;
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, -2px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 1px, 0);
   }
 }
 
@@ -82,5 +104,6 @@ export default {
     filter: var(--red-filter);
   }
 }
+
 </style>
 

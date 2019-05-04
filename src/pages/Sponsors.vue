@@ -2,31 +2,34 @@
   <div id="sponsors">
     <Title title="Sponsors" subtitle="Thanks to our" />
     <div class="sponsor diamond">
-      <router-link v-for="sponsor in diamond"
+      <a v-for="sponsor in diamond"
         v-bind="sponsor"
         :key="sponsor.image"
-        to={sponsor.link}
+        :href="sponsor.link"
+        target="_blank"
       >
         <img :src="imgLink(sponsor.image)" />
-      </router-link>
+      </a>
     </div>
     <div class="sponsor gold">
-      <router-link v-for="sponsor in gold"
+      <a v-for="sponsor in gold"
         v-bind="sponsor"
         :key="sponsor.image"
-        to={sponsor.link}
+        :href="sponsor.link"
+        target="_blank"
       >
         <img :src="imgLink(sponsor.image)" />
-      </router-link>
+      </a>
     </div>
     <div class="sponsor silver">
-      <router-link v-for="sponsor in silver"
+      <a v-for="sponsor in silver"
         v-bind="sponsor"
         :key="sponsor.image"
-        to={sponsor.link}
+        :href="sponsor.link"
+        target="_blank"
       >
         <img :src="imgLink(sponsor.image)" />
-      </router-link>
+      </a>
     </div>
   </div>
 </template>
@@ -48,27 +51,27 @@ export default {
     diamond: [
       {
         image: 'blip.png',
-        link: '',
+        link: 'https://blip.pt/',
       },
       {
         image: 'xing.png',
-        link: '',
+        link: 'https://www.xing.com/',
       },
     ],
     gold: [
       {
         image: 'jumia.png',
-        link: '',
+        link: 'https://group.jumia.com/',
       },
       {
         image: 'retail.png',
-        link: '',
+        link: 'http://www.retail-consult.com/',
       },
     ],
     silver: [
       {
         image: 'losch.png',
-        link: '',
+        link: 'https://www.losch.lu',
       },
     ],
   }),
@@ -83,36 +86,37 @@ export default {
   width: 70%;
   display: flex;
   flex-direction: column;
-
-  & img {
-    margin-right: var(--large-space);
-  }
 }
 
 .sponsor {
   display: flex;
   align-items: center;
   margin-bottom: var(--large-space);
+
+  & img {
+    margin-right: var(--large-space);
+    cursor: pointer;
+  }
 }
 
 .diamond {
   & img {
     max-height: 200px;
-    max-width: 350px;
+    max-width: 250px;
   }
 }
 
 .gold {
   & img {
     max-height: 130px;
-    max-width: 280px;
+    max-width: 200px;
   }
 }
 
 .silver {
   & img {
     max-height: 70px;
-    max-width: 190px;
+    max-width: 100px;
   }
 }
 
