@@ -144,8 +144,10 @@ nav {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: var(--small-space);
   background: var(--main-color);
+  position: relative;
 
   @media (--bellow-desktop) {
     margin: 0;
@@ -188,6 +190,18 @@ footer {
   }
 }
 
+.organizer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &, & a {
+    color: var(--white);
+    font-size: var(--text-font);
+  }
+}
+
 .border {
   &::before {
     content: '';
@@ -200,11 +214,6 @@ footer {
     position: absolute;
     background-color: var(--main-color);
   }
-}
-
-.organizer, .organizer a {
-  color: var(--white);
-  font-size: var(--text-font);
 }
 
 .upper-border {
