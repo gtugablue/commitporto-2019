@@ -47,7 +47,6 @@ export default {
   display: inline-block;
   text-align: center;
   margin-bottom: var(--space);
-  cursor: pointer;
 
   @media (--desktop) {
     grid-column: span 2;
@@ -58,6 +57,7 @@ export default {
   }
 
   &.speakerHover {
+    cursor: pointer;
     &:hover {
       & .photo {
         opacity: 1;
