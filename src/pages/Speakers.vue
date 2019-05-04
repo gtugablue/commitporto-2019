@@ -100,7 +100,7 @@ export default {
   grid-template-columns: repeat(8, 1fr);
 
   @media (--bellow-desktop) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

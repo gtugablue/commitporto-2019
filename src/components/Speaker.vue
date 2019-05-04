@@ -1,5 +1,5 @@
 <template>
-  <div class="speaker" :class="{speakerHover: name}">
+  <div class="speaker" :class="{placeholder: name}">
     <img class="photo" :src="fullfileName"/>
     <div class="name">{{name}}</div>
     <div class="social">
@@ -56,8 +56,13 @@ export default {
     }
   }
 
-  &.speakerHover {
+  &.placeholder {
     cursor: pointer;
+
+    @media (--bellow-desktop) {
+      display: none;
+    }
+
     &:hover {
       & .photo {
         opacity: 1;
