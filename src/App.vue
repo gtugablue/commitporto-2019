@@ -151,7 +151,6 @@ footer {
 
   @media (--bellow-desktop) {
     margin: 0;
-    margin-bottom: var(--small-space);
     text-align: center;
     flex-direction: column-reverse;
   }
