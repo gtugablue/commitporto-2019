@@ -1,0 +1,28 @@
+{
+  "diamond": [
+    {
+      "image": "blip.png",
+      "link": "https://blip.pt/"
+    },
+    {
+      "image": "xing.png",
+      "link": "https://www.xing.com/"
+    }
+  ],
+  "gold": [
+    {
+      "image": "jumia.png",
+      "link": "https://group.jumia.com/"
+    },
+    {
+      "image": "retail.png",
+      "link": "http://www.retail-consult.com/"
+    }
+  ],
+  "silver": [
+    {
+      "image": "losch.png",
+      "link": "https://www.losch.lu"
+    }
+  ]
+}

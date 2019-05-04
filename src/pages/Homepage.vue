@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import Button from '@/components/Button';
-import AboutUs from '@/pages/AboutUs';
-import Speakers from '@/pages/Speakers';
-import Sponsors from '@/pages/Sponsors';
+import Button from '@/components/common/Button';
+import AboutUs from '@/components/AboutUs';
+import Speakers from '@/components/speakers/';
+import Sponsors from '@/components/sponsors/';
 
 export default {
   name: 'Homepage',
