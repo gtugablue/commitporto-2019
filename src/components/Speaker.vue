@@ -1,5 +1,5 @@
 <template>
-  <div class="speaker">
+  <div class="speaker" :class="{speakerHover: name}">
     <img class="photo" :src="fullfileName"/>
     <div class="name">{{name}}</div>
     <div class="social">
@@ -56,6 +56,16 @@ export default {
       grid-column: 2 / 4;
     }
   }
+
+  &.speakerHover {
+    &:hover {
+      & .photo {
+        opacity: 1;
+        animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
 }
 
 .photo {
@@ -63,12 +73,6 @@ export default {
   opacity: 0.8;
   transform: translate3d(0, 0, 0);
   transition: opacity 0.35s, transform 0.35s;
-
-  &:hover {
-    opacity: 1;
-    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
-  }
 }
 
 @keyframes shake {
