@@ -4,16 +4,16 @@
     <div class="name">{{name}}</div>
     <div class="social">
       <a v-if="twitter" :href="twitterLink" target="_blank">
-        <img  src="@/assets/twitter.svg" />
+        <img src="@/assets/twitter.svg" />
       </a>
       <a v-if="github" :href="githubLink" target="_blank">
-        <img  src="@/assets/github.svg" />
+        <img src="@/assets/github.svg" />
       </a>
       <a v-if="linkedin" :href="linkedinLink" target="_blank">
-        <img  src="@/assets/linkedin.svg" />
+        <img src="@/assets/linkedin.svg" />
       </a>
       <a v-if="website" :href="website" target="_blank">
-        <img  src="@/assets/link.svg" />
+        <img src="@/assets/link.svg" />
       </a>
     </div>
   </div>
