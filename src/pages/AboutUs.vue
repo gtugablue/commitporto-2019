@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div id="about" class="section">
     <div class="about-img">
       <div class="border upper-border"/>
       <img src="@/assets/aboutus.png"/>
@@ -32,8 +32,7 @@ export default {
 @import '../variables';
 
 #about {
-  @apply --new-section;
-  display: flex;
+  flex-direction: row;
 }
 
 .about-img {

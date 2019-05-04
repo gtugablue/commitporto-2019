@@ -1,5 +1,5 @@
 <template>
-  <div id="sponsors">
+  <div id="sponsors" class="section">
     <Title title="Sponsors" subtitle="Thanks to our" />
     <div class="sponsor diamond">
       <a v-for="sponsor in diamond"
@@ -80,12 +80,6 @@ export default {
 
 <style scoped>
 @import '../variables';
-
-#sponsors {
-  @apply --new-section;
-  display: flex;
-  flex-direction: column;
-}
 
 .sponsor {
   display: flex;

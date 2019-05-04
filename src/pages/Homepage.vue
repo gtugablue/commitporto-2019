@@ -103,14 +103,17 @@ export default {
 }
 
 .gallery {
-  @apply --new-section;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   filter: grayscale(0.4);
+  margin: 140px auto 0;
 
   & img {
     max-width: 100%;
+  }
+
+  @media (--bellow-desktop) {
+    margin: 100px auto 0;
   }
 }
 </style>

@@ -216,6 +216,19 @@ footer {
   }
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 140px auto 0;
+  width: 70%;
+
+  @media (--bellow-desktop) {
+    margin: 100px auto 0;
+    width: 80%;
+  }
+
+}
+
 .upper-border {
   &::before {
     top: 0;

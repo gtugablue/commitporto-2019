@@ -1,5 +1,5 @@
 <template>
-  <div id="speakers">
+  <div id="speakers" class="section">
     <Title title="Speakers" subtitle="Meet our" />
     <div class="speakers-container">
       <div class="border upper-border"/>
@@ -90,13 +90,6 @@ export default {
 
 <style scoped>
 @import '../variables';
-
-#speakers {
-  @apply --new-section;
-  display: flex;
-  flex-direction: column;
-}
-
 .speakers-container {
   position: relative;
   padding: var(--space);
