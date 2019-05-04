@@ -114,6 +114,11 @@ export default {
 
   @media (--bellow-desktop) {
     margin: 100px auto 0;
+    grid-template-columns: repeat(2, 1fr);
+
+    img:nth-child(n + 5) {
+      display: none;
+    }
   }
 }
 </style>
