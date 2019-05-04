@@ -32,8 +32,7 @@ export default {
 @import '../variables';
 
 #about {
-  margin: var(--new-section-margin);
-  width: 70%;
+  @apply --new-section;
   display: flex;
 }
 

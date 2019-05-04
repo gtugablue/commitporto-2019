@@ -82,8 +82,7 @@ export default {
 @import '../variables';
 
 #sponsors {
-  margin: var(--new-section-margin);
-  width: 70%;
+  @apply --new-section;
   display: flex;
   flex-direction: column;
 }

@@ -92,8 +92,7 @@ export default {
 @import '../variables';
 
 #speakers {
-  margin: var(--new-section-margin);
-  width: 70%;
+  @apply --new-section;
   display: flex;
   flex-direction: column;
 }

@@ -103,9 +103,10 @@ export default {
 }
 
 .gallery {
+  @apply --new-section;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: var(--new-section-margin);
   filter: grayscale(0.4);
 
   & img {
