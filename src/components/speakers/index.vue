@@ -4,7 +4,7 @@
     <div class="speakers-container">
       <div class="border upper-border"/>
       <div class="speakers-list">
-        <Speaker v-for="speaker in speakers" v-bind="speaker" :key="speaker.name"/>
+        <Speaker v-for="speaker in speakers" v-bind="speaker" :key="speaker.name" :openSpeakerDetails="openSpeakerDetails" />
       </div>
       <div class="border bottom-border"/>
     </div>
@@ -18,6 +18,7 @@ import { speakers } from './speakers.json';
 
 export default {
   name: 'Speakers',
+  props: ['openSpeakerDetails'],
   components: {
     Title,
     Speaker,

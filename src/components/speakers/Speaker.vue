@@ -1,5 +1,5 @@
 <template>
-  <div class="speaker" :class="{placeholder: !name}">
+  <div class="speaker" :class="{placeholder: !name}" @click="() => openSpeakerModal()">
     <img class="photo" :src="fullfileName"/>
     <div class="name">{{name}}</div>
     <div class="social">
@@ -20,9 +20,23 @@
 </template>
 
 <script>
+import SpeakerModal from './SpeakerModal';
+
 export default {
   name: 'Speaker',
-  props: ['file', 'name', 'twitter', 'github', 'linkedin', 'website'],
+  props: [
+    'file',
+    'name',
+    'role',
+    'bio',
+    'title',
+    'abstract',
+    'twitter',
+    'github',
+    'linkedin',
+    'website',
+    'openSpeakerDetails'
+  ],
   computed: {
     fullfileName() {
       return `/static/speakers/${this.file}`;
@@ -37,6 +51,12 @@ export default {
       return `https://www.linkedin.com/in/${this.linkedin}`;
     },
   },
+  methods: {
+    openSpeakerModal() {
+      const { fullfileName, role, name, bio, title, abstract } = this;
+      this.openSpeakerDetails(SpeakerModal, { fullfileName, role, name, bio, title, abstract });
+    }
+  }
 };
 </script>
 

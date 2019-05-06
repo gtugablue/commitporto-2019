@@ -24,6 +24,10 @@ export default {
   text-transform: uppercase;
   font-size: 1.5rem; /* 24px */
   font-weight: var(--font-weight-light);
+
+  @media (--bellow-desktop) {
+    font-size: 1rem; /* 16px */
+  }
 }
 
 .title {
@@ -31,5 +35,9 @@ export default {
   text-transform: capitalize;
   font-size: 3.12rem; /* 50px */
   font-weight: var(--font-weight-light);
+
+  @media (--bellow-desktop) {
+    font-size: 2rem; /* 32px */
+  }
 }
 </style>

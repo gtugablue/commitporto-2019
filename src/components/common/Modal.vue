@@ -43,15 +43,16 @@ export default {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -60,7 +61,7 @@ export default {
 }
 
 .modal-content {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   right: 0;
@@ -83,6 +84,7 @@ export default {
 
   @media (--mobile) {
     max-width: 100%;
+    max-height: 90%;
     padding: 25px;
   }
 

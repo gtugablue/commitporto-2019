@@ -22,7 +22,7 @@
       <img src="@/assets/gallery/gallery_4.jpg" />
       <img src="@/assets/gallery/gallery_10.jpg" />
     </div>
-    <Speakers />
+    <Speakers :openSpeakerDetails="openSpeakerDetails" />
     <Sponsors />
   </div>
 </template>
@@ -32,6 +32,7 @@ import Button from '@/components/common/Button';
 import AboutUs from '@/components/AboutUs';
 import Speakers from '@/components/speakers/';
 import Sponsors from '@/components/sponsors/';
+import CallForSpeaker from '@/components/CallForSpeaker';
 
 export default {
   name: 'Homepage',
@@ -40,6 +41,12 @@ export default {
     AboutUs,
     Speakers,
     Sponsors,
+  },
+  methods: {
+    openSpeakerDetails(component, properties) {
+      this.$emit('modalVisible', component, properties);
+      //  this.$emit('modalVisible', CallForSpeaker);
+    },
   },
 };
 </script>

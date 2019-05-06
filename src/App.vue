@@ -4,7 +4,7 @@
     <router-view @modalVisible="showModal" />
     <Footer />
     <Modal v-show="isModalVisible" @close="closeModal">
-      <component :is="modalContent" slot="body"></component>
+      <component :is="modalComponent" slot="body" v-bind="modalProperties"></component>
     </Modal>
   </div>
 </template>
@@ -23,16 +23,20 @@ export default {
   },
   data: () => ({
     isModalVisible: false,
-    modalContent: null,
+    modalComponent: null,
+    modalProperties: null,
     scrolled: false,
   }),
   methods: {
-    showModal(modalContent) {
+    showModal(modalComponent, modalProperties) {
       this.isModalVisible = true;
-      this.modalContent = modalContent;
+      this.modalComponent = modalComponent;
+      this.modalProperties = modalProperties;
+      document.body.classList.add('modalVisible');
     },
     closeModal() {
       this.isModalVisible = false;
+      document.body.classList.remove('modalVisible');
     },
     handleScroll() {
       this.scrolled = window.scrollY > 0;
@@ -50,15 +54,15 @@ export default {
 <style>
 @import './variables';
 
-html {
-  height: 100vh;
-}
-
 body {
   margin: 0;
   width: 100vw;
   height: 100%;
   position: relative;
+
+  &.modalVisible {
+    overflow: hidden;
+  }
 }
 
 #app {

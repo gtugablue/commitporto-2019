@@ -10,6 +10,7 @@
   --light-grey: #e4e4e4;
   --main-font: 'Rubik', sans-serif;
   --secondary-font: 'Josefin Slab', cursive;
+  --large-font: 1.875rem; /* 30px */
   --medium-font: 1.25rem; /* 20px */
   --text-font: 0.87rem; /* 14px */
   --small-font: {
