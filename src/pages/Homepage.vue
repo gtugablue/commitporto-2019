@@ -30,8 +30,8 @@
 <script>
 import Button from '@/components/common/Button';
 import AboutUs from '@/components/AboutUs';
-import Speakers from '@/components/Speakers/';
-import Sponsors from '@/components/Sponsors/';
+import Speakers from '@/components/speakers/';
+import Sponsors from '@/components/sponsors/';
 
 export default {
   name: 'Homepage',
