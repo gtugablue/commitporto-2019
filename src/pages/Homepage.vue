@@ -30,9 +30,8 @@
 <script>
 import Button from '@/components/common/Button';
 import AboutUs from '@/components/AboutUs';
-import Speakers from '@/components/speakers/';
-import Sponsors from '@/components/sponsors/';
-import CallForSpeaker from '@/components/CallForSpeaker';
+import Speakers from '@/components/Speakers/';
+import Sponsors from '@/components/Sponsors/';
 
 export default {
   name: 'Homepage',
@@ -45,7 +44,6 @@ export default {
   methods: {
     openSpeakerDetails(component, properties) {
       this.$emit('modalVisible', component, properties);
-      //  this.$emit('modalVisible', CallForSpeaker);
     },
   },
 };

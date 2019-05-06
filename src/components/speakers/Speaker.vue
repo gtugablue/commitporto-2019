@@ -35,7 +35,7 @@ export default {
     'github',
     'linkedin',
     'website',
-    'openSpeakerDetails'
+    'openSpeakerDetails',
   ],
   computed: {
     fullfileName() {
@@ -55,8 +55,8 @@ export default {
     openSpeakerModal() {
       const { fullfileName, role, name, bio, title, abstract } = this;
       this.openSpeakerDetails(SpeakerModal, { fullfileName, role, name, bio, title, abstract });
-    }
-  }
+    },
+  },
 };
 </script>
 
