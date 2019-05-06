@@ -1,7 +1,7 @@
 <template>
-  <div class="speaker" :class="{placeholder: !name}" @click="() => openSpeakerModal()">
-    <img class="photo" :src="fullfileName"/>
-    <div class="name">{{name}}</div>
+  <div class="speaker" :class="{placeholder: !name}">
+    <img class="photo" :src="fullfileName" @click="openSpeakerModal"/>
+    <div class="name" @click="openSpeakerModal">{{name}}</div>
     <div class="social">
       <a v-if="twitter" :href="twitterLink" target="_blank">
         <img src="@/assets/social/twitter.svg" />

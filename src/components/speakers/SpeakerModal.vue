@@ -11,7 +11,7 @@
     </div>
     <div class="talk-section">
       <div class="talk-title">{{title}}</div>
-      <div class="talk">{{abstract}}</div>
+      <div class="talk" v-html="abstract"></div>
     </div>
   </div>
 </template>
@@ -67,6 +67,6 @@ export default {
 .talk {
   font-size: var(--text-font);
   margin-top: var(--small-space);
-  line-height: 2;
+  line-height: 1.5;
 }
 </style>
