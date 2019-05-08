@@ -34,7 +34,13 @@
       "abstract": "Modern web apps use JS features that not all browsers can understand. To be able to do this, developers transpile their code into an older version of javascript that browsers can understand. However, modern browsers are catching up with the language and most of them can understand the latest features of JS.</p><p>I want to talk about a way we can make different builds for different browsers. This way we're able to send less code to modern browsers and let them use their native implementation which is faster. This strategy allows us to send the transpiled code to the old browsers without penalizing modern ones.</p><p>Relevance? I think this is useful to all web developer that work in a large enough app and have the need to support old browsers.</p><p>Objective? Introduce the idea of multiple builds to the audience, and let them know how hard (or easy) it is to implement. Share common gotchas and best practices.</p><p>Approach? I was thinking on using a metaphor throughout the talk, where I talk about browsers as if they were sled dogs. In this metaphor I explain how fast sled dogs have to carry the burden of the regular and the slow ones. Then pose a different strategy where we group fast dogs in a separate sled to the regular ones, and the slow ones. This will allow us to treat each type of dog differently and also give them special care. No dog should feel bad just because they're slower / older.</p><p>Structure? Start posing the issue with a similar intro to this abstract. Continue showing some cute dog pics while I talk about this metaphor. And finish with a code example.</p>"
     },
     {
-      "file": "user.png"
+      "file": "ricardo.jpg",
+      "name": "Ricardo Mendes",
+      "role": "Software Developer @ Simplabs",
+      "bio":"Ricardo is a long time open sourcerer and member of the Ember.js learning and framework core teams. Ricardo currently works at Simplabs, and hosts the Porto Codes meetup and the Conversas em Código podcast.",
+      "title": "Thriving through the hype cycle: an Ember.js story",
+      "abstract": "<p>The front-end development community has been through a fair share of hype cycles in the last ten years. In this time, we have seen libraries and frameworks come and go, sometimes even disappearing completely like batman.js.</p><p>In this talk we will cover how the Ember.js project has managed not only to keep up with the hype cycles, but to continually push the framework and the web forward and bring its users along.</p><p>We will close off the presentation by talking how this culminates in the concept of editions, the first of which is Ember Octane.</p>",
+      "linkedin": "rmendes"
     },
     {
       "file": "user.png"
