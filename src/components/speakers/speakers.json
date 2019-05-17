@@ -43,10 +43,23 @@
       "linkedin": "rmendes"
     },
     {
-      "file": "user.png"
+      "file": "jose.png",
+      "name": "José Silva",
+      "role": "Head of Development @ Dott",
+      "bio": "Although I have experience in several business areas, my main focus in these last years is e-commerce. I am currently managing the development team at Dott - a new marketplace that just went live in Portugal. I enjoy discussing technical topics with my team and help them building our infrastructure and architecture. We work essentially with Go and Scala and our daily goal is to build resilient systems that live up to the standards of the Reactive Manifesto.",
+      "github": "jcunhasilva",
+      "linkedin": "joseantoniosilva",
+      "title": "A Reactive Approach to Distributed Transactions",
+      "abstract": "<p>What happens to your data when you adopt Microservices? Are ACID transactions still a possibility even with distributed services? How do we ensure data consistency amongst databases and systems? I’m sure that some of these questions pop up on your mind when you think about Microservice architectures.</p><p>In this talk I will show how this problem affects e-commerce projects and how we at Dott came up with a solution by following Reactive Programming concepts.</p>"
     },
     {
-      "file": "user.png"
+      "file": "filipa.jpg",
+      "name": "Filipa Moura",
+      "role": "Software Engineer @ Twitter",
+      "bio": "Filipa is the tech lead of the Health ML Infrastructure team at Twitter, focusing on keeping the platform safe. Previous roles included leading the backend design for the live video experience, among others. Prior to Twitter, she was involved in designing low latency ad reporting at Yahoo as well as backend systems at UBS.",
+      "twitter": "filipam",
+      "linkedin": "filipammoura",
+      "title": "Talk: to be announced"
     },
     {
       "file": "user.png"
