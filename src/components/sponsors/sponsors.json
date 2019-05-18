@@ -5,11 +5,19 @@
       "link": "https://blip.pt/"
     },
     {
+      "image": "hostelworld.png",
+      "link": "https://www.hostelworld.com/"
+    },
+    {
       "image": "xing.png",
       "link": "https://www.xing.com/"
     }
   ],
   "gold": [
+    {
+      "image": "aubay.png",
+      "link": "http://www.aubay.pt/"
+    },
     {
       "image": "jumia.png",
       "link": "https://group.jumia.com/"
@@ -17,9 +25,25 @@
     {
       "image": "retail.png",
       "link": "http://www.retail-consult.com/"
+    },
+    {
+      "image": "critical_manufacturing.png",
+      "link": "http://www.criticalmanufacturing.com/"
     }
   ],
   "silver": [
+    {
+      "image": "bosch.png",
+      "link": "http://www.bosch.pt/"
+    },
+    {
+      "image": "fractal.png",
+      "link": "https://www.trustfractal.com/"
+    },
+    {
+      "image": "talkdesk.png",
+      "link": "https://www.talkdesk.com/"
+    },
     {
       "image": "losch.png",
       "link": "https://www.losch.lu"

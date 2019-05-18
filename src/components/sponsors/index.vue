@@ -64,7 +64,7 @@ export default {
 .diamond {
   & img {
     max-height: 200px;
-    max-width: 250px;
+    max-width: 300px;
 
     @media (--bellow-desktop) {
       max-width: 150px;
