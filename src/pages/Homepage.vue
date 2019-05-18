@@ -6,7 +6,7 @@
       </div>
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
-        <div class="time">JUNE 22, 2019</div>
+        <div class="time">JUNE 22 at FEUP</div>
       </div>
     </div>
     <AboutUs />
