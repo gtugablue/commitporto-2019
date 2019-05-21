@@ -62,7 +62,14 @@
       "title": "Talk: to be announced"
     },
     {
-      "file": "user.png"
+      "file": "erik.jpg",
+      "name": "Erik Muttersbach",
+      "role": "Co-Founder & CTO @ FreightHub",
+      "bio": "Erik is a serial entrepreneur and CTO with more than 10 years of experience in building software. In the past years, he co-founded tech companies with a diverse focus, ranging from big data platforms over beacon technology for museums to e-commerce systems. Having built three companies from scratch and consulted various tech companies and Venture Capitalists, Erik knows the ins and outs of the startup ecosystem. Erik has graduated from Technical University of Munich with a Master in Computer science and holds an Honours Degree in Technology Management.",
+      "linkedin": "erikmuttersbach",
+      "github": "erikmuttersbach",
+      "title": "Event Sourcing in practice: Enabling global, real-time shipment tracking at FreightHub",
+      "abstract": "<p>FreightHub is a digital freight forwarder who aims at re-defining global transport of goods through technology: Part of our journey is to enable real-time tracking of cargo for our customers. In an industry, which dates back to the bronze age, this is not an easy challenge. Our answer: Event Sourcing.</p><p>In this talk, we'll explore how we use event sourcing in practice, what we have learned, and how we ultimately use it for enabling real-time tracking around the world.</p>"
     },
     {
       "file": "user.png"
