@@ -47,7 +47,7 @@ export default {
 }
 
 .bio-details {
-  padding: var(--space) 0 0 var(--space);
+  padding-left: var(--space);
 }
 
 .bio {
