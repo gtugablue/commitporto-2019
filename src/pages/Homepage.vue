@@ -7,6 +7,7 @@
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
         <div class="time">JUNE 22 @ FEUP</div>
+        <Button id="eventbrite-widget-modal-trigger-61719447529" text="Get your tickets now" />
       </div>
     </div>
     <AboutUs />

@@ -3,13 +3,23 @@
     <router-link to="#about">About</router-link>
     <router-link to="#speakers">Speakers</router-link>
     <router-link to="#sponsors">Sponsors</router-link>
+    <Button
+      id="eventbrite-widget-modal-trigger-61719447529"
+      text="Get tickets"
+      isSecondary={true}
+    />
   </nav>
 </template>
 
 <script>
+import Button from '@/components/common/Button';
+
 export default {
   name: 'Navbar',
   props: ['scrolled'],
+  components: {
+    Button,
+  },
 };
 </script>
 
