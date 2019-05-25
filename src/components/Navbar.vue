@@ -71,6 +71,14 @@ nav {
       color: var(--text-color);
     }
   }
+
+  @media (--bellow-desktop) {
+    & a {
+      &:not(:last-child) {
+        margin-right: var(--x-small-space);
+      }
+    }
+  }
 }
 
 </style>

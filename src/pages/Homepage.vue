@@ -6,7 +6,10 @@
       </div>
       <div class="logo-section">
         <img class="logo" src="@/assets/logobrancohor.png"/>
-        <div class="time">JUNE 22 @ FEUP</div>
+        <div class="time">JUNE 22, 2019</div>
+        <a class="location" href="https://goo.gl/maps/Bcr3WfwoUasc1vg2A" target="_blank">
+          <img src="@/assets/location.svg" />FEUP
+        </a>
         <Button id="eventbrite-widget-modal-trigger-61719447529" text="Get your tickets now" />
       </div>
     </div>
@@ -103,8 +106,32 @@ export default {
   & .time {
     font-family: var(--secondary-font);
     font-size: var(--medium-font);
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: var(--small-space);;
+    margin-bottom: var(--x-small-space);
+
+  }
+
+  & .location {
+    font-family: var(--main-font);
+    font-size: var(--medium-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--x-small-space);
+    margin-bottom: var(--small-space);;
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+      & img {
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    & img {
+      width: 20px;
+      margin-right: var(--x-small-space);
+    }
   }
 }
 
@@ -125,6 +152,12 @@ export default {
     & img:nth-child(n + 5) {
       display: none;
     }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg)
   }
 }
 </style>

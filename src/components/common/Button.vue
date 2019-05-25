@@ -29,6 +29,10 @@ button {
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 
+  &:hover {
+    transform: translateY(2px);
+  }
+
   &:active {
     background-color: var(--main-color);
     color: var(--white);
@@ -49,7 +53,6 @@ button {
   &.secondary {
     background-color: var(--main-color);
     color: var(--white);
-    box-shadow: none;
 
     &:active {
       background-color: var(--white);
