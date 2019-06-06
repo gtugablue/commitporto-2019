@@ -52,10 +52,10 @@ export default {
 .sponsor {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   & img {
-    margin-right: var(--large-space);
     margin-bottom: var(--large-space);
     cursor: pointer;
   }

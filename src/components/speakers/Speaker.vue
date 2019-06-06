@@ -2,6 +2,7 @@
   <div class="speaker" :class="{placeholder: !name}">
     <img class="photo" :src="fullfileName" @click="openSpeakerModal"/>
     <div class="name" @click="openSpeakerModal">{{name}}</div>
+    <div class="role">{{role}}</div>
     <div class="social">
       <a v-if="twitter" :href="twitterLink" target="_blank">
         <img src="@/assets/social/twitter.svg" />
@@ -124,6 +125,11 @@ export default {
   text-transform: uppercase;
   color: var(--text-color);
   font-size: var(--medium-font);
+}
+
+.role {
+  @apply --small-font;
+  color: var(--text-color);
 }
 
 .social img {
