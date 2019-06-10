@@ -85,7 +85,8 @@
       "role": "Information Security Specialist @ Talkdesk",
       "bio": "My passion for security and technology started when I was a kid and got my old IBM PS/2 PC infected with the famous virus \"Barrotes\". Throughout my career, in the last 18 years, from Sysadmin to Security Analyst and now as a Information Security Specialist, I was always driven by the continual process of making systems and people more safe and secure in a era where privacy doesn’t exist and we are all exposed to numerous threats.",
       "linkedin": "miguel-viana-648163178",
-      "title": "Talk: to be announced"
+      "title": "From Social Engineering to Exploitation",
+      "abstract": "<p>As more and more technical attacks on systems have increased, so have numerous technology based countermeasures being used successfully to thwart them. But, a company may have purchased the best security technologies out there, trained their people to follow the best-security practices recommended by experts, and hired building guards form the best security firm in the business, that company is still totally vulnerable.</p><p>Why is that? In a single word - \"humans\". In all the fortresses of defense we build around systems, the human element is always the weakest link. Hackers - both good or bad - employ a specific set of tricks targeting people through the use of social engineering methods, often gaining unnoticed access to computer systems and sensitive data. In an era of laws and legislations protect individual's privacy, it is imperative for everyone to prepare, defend and react to these attacks.</p><p>In this talk, I will demonstrate how social engineering is used to perform an attack and what can we do to detect and prevent it.</p>"
     },
     {
       "file": "carlos.jpg",
