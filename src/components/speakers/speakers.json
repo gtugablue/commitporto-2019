@@ -60,7 +60,7 @@
       "twitter": "filipam",
       "linkedin": "filipamoura",
       "title": "Keeping your notifications safe",
-      "abstract": "<p>People should feel safe on Twitter and building a Twitter free of abuse, spam and other nuisances that distract from the public conversation is top priority. User notifications offer a way to see how others on Twitter are interacting with you and in order to make sure your Twitter experience doesn’t get tainted with negative interactions we have to keep your notifications safe.</p><p>This talk will go through the new service designed to run ML models to keep Twitter safe. It'll also highlight the ups and downs of the migration of the ML model that was designed to filter your notifications.</p>"
+      "abstract": "<p>People should feel safe on Twitter and building a Twitter free of abuse, spam and other nuisances that distract from the public conversation is top priority. User notifications offer a way to see how others on Twitter are interacting with you and in order to make sure your Twitter experience doesn't get tainted with negative interactions we have to keep your notifications safe.</p><p>This talk will go through the new service designed to run Machine Learning (ML) models to keep Twitter safe. It'll also highlight the ups and downs of the migration of the ML model that was designed to filter your notifications.</p>"
     },
     {
       "file": "erik.jpg",
