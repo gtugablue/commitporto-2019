@@ -26,7 +26,7 @@
       <img src="@/assets/gallery/gallery_4.jpg" />
       <img src="@/assets/gallery/gallery_10.jpg" />
     </div>
-    <Speakers :openSpeakerDetails="openSpeakerDetails" />
+    <Agenda :openSpeakerDetails="openSpeakerDetails" />
     <Sponsors />
   </div>
 </template>
@@ -34,7 +34,7 @@
 <script>
 import Button from '@/components/common/Button';
 import AboutUs from '@/components/AboutUs';
-import Speakers from '@/components/speakers/';
+import Agenda from '@/components/agenda/';
 import Sponsors from '@/components/sponsors/';
 
 export default {
@@ -42,7 +42,7 @@ export default {
   components: {
     Button,
     AboutUs,
-    Speakers,
+    Agenda,
     Sponsors,
   },
   methods: {
