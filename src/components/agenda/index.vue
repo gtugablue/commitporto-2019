@@ -5,14 +5,15 @@
       <div class="border upper-border"/>
       <div class="slots-list">
         <template v-for="slot in slots">
-          <div v-if="slot.type === 'filled'" class="frame filled">
-            <div class="content" v-for="description in slot.content">
+          <div v-if="slot.type === 'filled'" class="frame filled" :key="slot">
+            <div class="content" v-for="description in slot.content" :key="description">
               <div class="text">{{description.text}}</div>
               <div class="time">{{description.time}}</div>
             </div>
           </div>
-          <div v-else-if="slot.type === 'icon'" class="frame">
-            <img src="@/assets/social/twitter.svg" />
+          <div v-else-if="slot.type === 'icon'" class="frame icon" :key="slot">
+            <img class="break-icon" :src="breakIcon(slot.icon)" />
+            <div class="break-name">{{slot.text}}</div>
           </div>
           <Speaker
             v-else
@@ -41,6 +42,11 @@ export default {
     Speaker,
   },
   data: () => ({ slots }),
+  methods: {
+    breakIcon(name) {
+      return `/static/assets/${name}`;
+    },
+  },
 };
 </script>
 
@@ -80,6 +86,13 @@ export default {
     }
   }
 
+  &.icon {
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
   &.filled {
     background-color: var(--main-color);
     color: var(--white);
@@ -106,5 +119,20 @@ export default {
       margin-left: var(--x-small-space);
     }
   }
+}
+
+.break-icon {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: var(--small-space);
+}
+
+.break-name {
+  @apply --small-font;
+  background: var(--main-color);
+  color: var(--white);
+  padding: var(--x-small-space);
+  width: 100px;
+  text-align: center;
 }
 </style>

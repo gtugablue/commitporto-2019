@@ -5,11 +5,11 @@
       "content": [
         {
           "text": "Check-in",
-          "time": "9h"
+          "time": "9:00"
         },
         {
-          "text": "Opening",
-          "time": "9h50"
+          "text": "Opening Session",
+          "time": "9:50"
         }
       ]
     },
@@ -39,12 +39,8 @@
     },
     {
       "type": "icon",
-      "content": [
-        {
-          "text": "Coffee Break",
-          "icon": "coffeebreak.svg"
-        }
-      ]
+      "text": "Bosch Coffee Break",
+      "icon": "coffeebreak.svg"
     },
     {
       "file": "filipa.jpg",
@@ -81,12 +77,8 @@
     },
     {
       "type": "icon",
-      "content": [
-        {
-          "text": "Lunch Break",
-          "icon": "lunch.svg"
-        }
-      ]
+      "text": "Lunch Break",
+      "icon": "lunch.svg"
     },
     {
       "file": "jean.jpg",
@@ -109,12 +101,8 @@
     },
     {
       "type": "icon",
-      "content": [
-        {
-          "text": "Break",
-          "icon": "break.svg"
-        }
-      ]
+      "text": "Break",
+      "icon": "break.svg"
     },
     {
       "file": "rodrigo.png",
@@ -142,12 +130,8 @@
     },
     {
       "type": "icon",
-      "content": [
-        {
-          "text": "Coffee Break",
-          "icon": "coffeebreak.svg"
-        }
-      ]
+      "text": "Coffee Break",
+      "icon": "coffeebreak.svg"
     },
     {
       "file": "user.png",

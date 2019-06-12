@@ -1,6 +1,6 @@
 <template>
-  <div class="speaker" :class="{placeholder: !name}">
-    <img class="photo" :src="fullfileName" @click="openSpeakerModal"/>
+  <div class="speaker" :class="{placeholder: !name}" @click="openSpeakerModal">
+    <img class="photo" :src="fullfileName"/>
     <div class="time">{{time}}</div>
     <div class="name" @click="openSpeakerModal">{{name}}</div>
     <div class="role">{{role}}</div>
@@ -44,7 +44,7 @@ export default {
     'openSpeakerDetails',
     'content',
     'type',
-    'time'
+    'time',
   ],
   computed: {
     fullfileName() {
@@ -115,7 +115,7 @@ export default {
       opacity: 0;
     }
 
-    & .time {
+    & .time {
       opacity: 0;
     }
   }
