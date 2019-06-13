@@ -136,7 +136,13 @@
     },
     {
       "file": "user.png",
-      "time": "17:00"
+      "time": "17:00",
+      "name": "Fernando Silva",
+      "role": "Lead Data Scientist @ Novo Banco",
+      "bio": "Versatile professional with 10 years of experience in various incarnations of data, artificial intelligence, and engineering. Currently leading a talented team of data scientists at Novo Banco Digital. Has held multiple positions in industry (Vodafone Portugal, Cofco International, Talkdesk) and in academia. Proficient communicator: regularly delivers presentations to stakeholders, has authored and co-authored 30+ scientific publications, and has over three and a half years of university lecturing experience. Holds a PhD in machine learning and robotics. Adept of disruptive innovation.",
+      "github": "fgsilva",
+      "linkedin": "fernandogousilva",
+      "title": "Embracing explainable artificial intelligence in industry"
     },
     {
       "file": "miguel.jpeg",
