@@ -1,7 +1,7 @@
 <template>
   <nav :class="{scrolled: scrolled}">
     <router-link to="#about">About</router-link>
-    <router-link to="#speakers">Speakers</router-link>
+    <router-link to="#agenda">Agenda</router-link>
     <router-link to="#sponsors">Sponsors</router-link>
     <Button
       id="eventbrite-widget-modal-trigger-61719447529"

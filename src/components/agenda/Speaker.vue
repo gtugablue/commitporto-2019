@@ -1,6 +1,7 @@
 <template>
-  <div class="speaker" :class="{placeholder: !name}">
-    <img class="photo" :src="fullfileName" @click="openSpeakerModal"/>
+  <div class="speaker" :class="{placeholder: !name}" @click="openSpeakerModal">
+    <img class="photo" :src="fullfileName"/>
+    <div class="time">{{time}}</div>
     <div class="name" @click="openSpeakerModal">{{name}}</div>
     <div class="role">{{role}}</div>
     <div class="social">
@@ -16,6 +17,10 @@
       <a v-if="website" :href="website" target="_blank">
         <img src="@/assets/social/link.svg" />
       </a>
+    </div>
+    <div class="speaker-hover">
+      <div class="hovered-time">{{time}}</div>
+      <div class="hovered-talk">{{title}}</div>
     </div>
   </div>
 </template>
@@ -37,6 +42,9 @@ export default {
     'linkedin',
     'website',
     'openSpeakerDetails',
+    'content',
+    'type',
+    'time',
   ],
   computed: {
     fullfileName() {
@@ -68,11 +76,13 @@ export default {
   display: inline-block;
   text-align: center;
   margin-bottom: var(--space);
+  position: relative;
+  width: 200px;
 
   @media (--desktop) {
     grid-column: span 2;
 
-    &:nth-child(7n + 5) {
+    &:nth-child(3n+9) {
       grid-column: 2 / 4;
     }
   }
@@ -85,40 +95,62 @@ export default {
 
   &:not(.placeholder) {
     cursor: pointer;
+  }
 
-    &:hover {
-      & .photo {
-        opacity: 1;
-        animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
-        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
-      }
+  & .time {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    background: var(--main-color);
+    color: var(--white);
+    padding: 0  var(--x-small-space);
+  }
+
+  &:hover {
+    & .speaker-hover {
+      opacity: 1;
+    }
+
+    & .photo {
+      opacity: 0;
+    }
+
+    & .time {
+      opacity: 0;
     }
   }
 }
 
 .photo {
   width: 200px;
-  opacity: 0.8;
   transform: translate3d(0, 0, 0);
   transition: opacity 0.35s, transform 0.35s;
 }
 
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, -1px, 0);
-  }
+.speaker-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.35s;
+  background-color: var(--main-color);
+  color: var(--white);
+}
 
-  20%, 80% {
-    transform: translate3d(2px, 2px, 0);
-  }
+.hovered-time {
+  padding: 0 var(--small-space);
+  margin-top: var(--space);
+  text-align: left;
+}
 
-  30%, 50%, 70% {
-    transform: translate3d(-2px, -2px, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(1px, 1px, 0);
-  }
+.hovered-talk {
+  @apply --small-font;
+  font-weight: lighter;
+  text-align: left;
+  padding: var(--small-space);
 }
 
 .name {
@@ -141,6 +173,5 @@ export default {
     filter: var(--red-filter);
   }
 }
-
 </style>
 
