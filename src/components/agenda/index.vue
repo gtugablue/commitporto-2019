@@ -1,5 +1,5 @@
 <template>
-  <div id="speakers" class="section">
+  <div id="agenda" class="section">
     <Title title="Speakers" subtitle="Meet our" />
     <div class="speakers-container">
       <div class="border upper-border"/>
