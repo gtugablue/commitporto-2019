@@ -43,17 +43,6 @@
       "icon": "coffeebreak.svg"
     },
     {
-      "file": "filipa.jpg",
-      "name": "Filipa Moura",
-      "role": "Software Engineer @ Twitter",
-      "bio": "Filipa is the tech lead of the Health ML Infrastructure team at Twitter, focusing on keeping the platform safe. Previous roles included leading the backend design for the live video experience, among others. Prior to Twitter, she was involved in designing low latency ad reporting at Yahoo as well as backend systems at UBS.",
-      "twitter": "filipam",
-      "linkedin": "filipamoura",
-      "title": "Keeping your notifications safe",
-      "abstract": "<p>People should feel safe on Twitter and building a Twitter free of abuse, spam and other nuisances that distract from the public conversation is top priority. User notifications offer a way to see how others on Twitter are interacting with you and in order to make sure your Twitter experience doesn't get tainted with negative interactions we have to keep your notifications safe.</p><p>This talk will go through the new service designed to run Machine Learning (ML) models to keep Twitter safe. It'll also highlight the ups and downs of the migration of the ML model that was designed to filter your notifications.</p>",
-      "time": "11:40"
-    },
-    {
       "file": "erik.jpg",
       "name": "Erik Muttersbach",
       "role": "Co-Founder & CTO @ FreightHub",
@@ -62,19 +51,29 @@
       "github": "erikmuttersbach",
       "title": "Event Sourcing in practice: Enabling global, real-time shipment tracking at FreightHub",
       "abstract": "<p>FreightHub is a digital freight forwarder who aims at re-defining global transport of goods through technology: Part of our journey is to enable real-time tracking of cargo for our customers. In an industry, which dates back to the bronze age, this is not an easy challenge. Our answer: Event Sourcing.</p><p>In this talk, we'll explore how we use event sourcing in practice, what we have learned, and how we ultimately use it for enabling real-time tracking around the world.</p>",
+      "time": "11:40"
+    },
+    {
+      "file": "filipa.jpg",
+      "name": "Filipa Moura",
+      "role": "Software Engineer @ Twitter",
+      "bio": "Filipa is the tech lead of the Health ML Infrastructure team at Twitter, focusing on keeping the platform safe. Previous roles included leading the backend design for the live video experience, among others. Prior to Twitter, she was involved in designing low latency ad reporting at Yahoo as well as backend systems at UBS.",
+      "twitter": "filipam",
+      "linkedin": "filipamoura",
+      "title": "Keeping your notifications safe",
+      "abstract": "<p>People should feel safe on Twitter and building a Twitter free of abuse, spam and other nuisances that distract from the public conversation is top priority. User notifications offer a way to see how others on Twitter are interacting with you and in order to make sure your Twitter experience doesn't get tainted with negative interactions we have to keep your notifications safe.</p><p>This talk will go through the new service designed to run Machine Learning (ML) models to keep Twitter safe. It'll also highlight the ups and downs of the migration of the ML model that was designed to filter your notifications.</p>",
       "time": "12:10"
     },
     {
-      "file": "andrew.jpg",
-      "name": "Andrew Hill",
-      "role": "Co-founder & CEO @ textile01",
-      "twitter": "andrewxhill",
-      "github": "andrewxhill",
-      "website": "https://andrewxhill.com/",
-      "bio": "Andrew Hill has been a biologist, a mapper, a technologist, and an entrepreneur. Now, he is helping to build Textile, a company that explores technology for decentralized consumer applications. He spends his days trying to further their mission to radically change the way people use their data to interact with technology.",
-      "title": "Unleashing the power of decentralization: How to build unstoppable apps using IPFS",
-      "abstract": "From before you even wake up in the morning, your day is being encoded into digital data. What started as simply our IP address, nic, or maybe email address has now grown to include our dating profiles, medical histories, mundane conversations, personality traits not even we are aware of, and much more. While our trails of digital data have become more detailed, the technologies that leverage that data have become more opaque and less in our control.</p><p>Decentralization, content addressable data, and technologies like IPFS give us a new framework to think about how data should be stored, controlled, and used in technology. In this talk, we will present how IPFS can be used to build technologies that give users long-term control of their personal data while still enabling amazing and useful technology to be built around it.</p><p>You should expect to hear: how protocols in IPFS can be used in consumer apps; what new values and interactions are possible when using decentralized systems in apps; examples of some simple ways to add IPFS to your projects; a long term vision for how data could in the future of technology.</p>",
-      "time": "12:40"
+      "file": "fernando.jpg",
+      "time": "12:40",
+      "name": "Fernando Silva",
+      "role": "Lead Data Scientist @ Novo Banco",
+      "bio": "Versatile professional with 10 years of experience in various incarnations of data, artificial intelligence, and engineering. Currently leading a talented team of data scientists at Novo Banco Digital. Has held multiple positions in industry (Vodafone Portugal, Cofco International, Talkdesk) and in academia. Proficient communicator: regularly delivers presentations to stakeholders, has authored and co-authored 30+ scientific publications, and has over three and a half years of university lecturing experience. Holds a PhD in machine learning and robotics. Adept of disruptive innovation.",
+      "github": "fgsilva",
+      "linkedin": "fernandogousilva",
+      "title": "Embracing explainable artificial intelligence in industry",
+      "abstract": "<p>Artificial intelligence (AI) techniques have become widespread across multiple sectors in industry. However, as intelligent systems are increasingly trusted with decisions that may have financial, safety, security, or personal ramifications to an individual, the need for deep understanding of the decision-making rationale of such systems also increases. To achieve complete transparency, detailed \"explanations\" are necessary.</p><p>In this talk, I will provide an overview of existing perspectives on explainable artificial intelligence systems, discuss on-going efforts in industry for opening the AI black box, and describe how we are currently tackling this topic at Novo Banco.</p>"
     },
     {
       "type": "icon",
@@ -135,14 +134,16 @@
       "icon": "coffeebreak.svg"
     },
     {
-      "file": "user.png",
-      "time": "17:00",
-      "name": "Fernando Silva",
-      "role": "Lead Data Scientist @ Novo Banco",
-      "bio": "Versatile professional with 10 years of experience in various incarnations of data, artificial intelligence, and engineering. Currently leading a talented team of data scientists at Novo Banco Digital. Has held multiple positions in industry (Vodafone Portugal, Cofco International, Talkdesk) and in academia. Proficient communicator: regularly delivers presentations to stakeholders, has authored and co-authored 30+ scientific publications, and has over three and a half years of university lecturing experience. Holds a PhD in machine learning and robotics. Adept of disruptive innovation.",
-      "github": "fgsilva",
-      "linkedin": "fernandogousilva",
-      "title": "Embracing explainable artificial intelligence in industry"
+      "file": "andrew.jpg",
+      "name": "Andrew Hill",
+      "role": "Co-founder & CEO @ textile01",
+      "twitter": "andrewxhill",
+      "github": "andrewxhill",
+      "website": "https://andrewxhill.com/",
+      "bio": "Andrew Hill has been a biologist, a mapper, a technologist, and an entrepreneur. Now, he is helping to build Textile, a company that explores technology for decentralized consumer applications. He spends his days trying to further their mission to radically change the way people use their data to interact with technology.",
+      "title": "Unleashing the power of decentralization: How to build unstoppable apps using IPFS",
+      "abstract": "From before you even wake up in the morning, your day is being encoded into digital data. What started as simply our IP address, nic, or maybe email address has now grown to include our dating profiles, medical histories, mundane conversations, personality traits not even we are aware of, and much more. While our trails of digital data have become more detailed, the technologies that leverage that data have become more opaque and less in our control.</p><p>Decentralization, content addressable data, and technologies like IPFS give us a new framework to think about how data should be stored, controlled, and used in technology. In this talk, we will present how IPFS can be used to build technologies that give users long-term control of their personal data while still enabling amazing and useful technology to be built around it.</p><p>You should expect to hear: how protocols in IPFS can be used in consumer apps; what new values and interactions are possible when using decentralized systems in apps; examples of some simple ways to add IPFS to your projects; a long term vision for how data could in the future of technology.</p>",
+      "time": "17:00"
     },
     {
       "file": "miguel.jpeg",
